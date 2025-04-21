@@ -1423,20 +1423,20 @@ figure.cover {
 
 
 .welcome {
-  banner-container {
+  .banner-container {
     position: relative;
     width: 100%;
     margin-bottom: 2rem;
   }
   
-  full-width-banner {
+  .full-width-banner {
     width: 100%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
   }
   
-  banner-title {
+  .banner-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1450,31 +1450,31 @@ figure.cover {
   
   
   /* 内容图片样式 */
-  content-image {
+  .content-image {
     margin-bottom: 20px;
   }
-  content-image img {
+  .content-image img {
     width: 100%;
     // max-height: 300px;
     object-fit: cover;
   }
   
   /* 按钮组样式 */
-  button-group {
+  .button-group {
     display: flex;
     gap: 15px;
     margin-bottom: 30px;
     justify-content: center; /* 将按钮组在水平方向上居中 */
   }
   
-  btn {
+  .btn {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     color: white;
   }
-  btn-github { background-color: #24292e; }
-  btn-codalab { background-color: #0076b5; }
-  btn-ntire { background-color: #ff5722; }
+  .btn-github { background-color: #24292e; }
+  .btn-codalab { background-color: #0076b5; }
+  .btn-ntire { background-color: #ff5722; }
   
 }
