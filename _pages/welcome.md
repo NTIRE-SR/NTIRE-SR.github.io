@@ -1,40 +1,28 @@
 ---
 layout: welcome
-title: about
+title: Welcome
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 # 添加横幅图片配置
 banner:
   enabled: true
-  image: banner.jpg
+  image: /assets/img/cvpr2025_nashville_tn.jpg
   title: NTIRE 2025 Image Super-Resolution
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Dear Participants,
+Thank you for taking part in the **NTIRE 2025 Image Super-Resolution (×4) Challenge**!
+This year, we introduced two tracks to comprehensively showcase advancements in image super-resolution:
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+- **Track 1 (Restoration Track)** – focused on evaluating pure restoration capabilities.
+- **Track 2 (Perception Track)** – centered on the perceptual quality of the results.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+We are pleased to announce that the challenge attracted **286 participants**, and **25 teams** successfully completed the competition. Over the past few days, we have thoroughly validated all submitted code and evaluated the corresponding results. The final rankings for both tracks are listed below. 
+Last but not least, **congratulations to SamsungAICamera and SNUCV** for achieving the top performances in the Restoration track and the Perception track, respectively. 🎉🎉🎉
+We sincerely appreciate your contributions and look forward to your participation again next year. Let’s continue pushing the boundaries of image super-resolution—together!!!
+
+Warm regards,
+The NTIRE 2025 Image Super-Resolution (×4) Challenge Organizers
+April 20, 2025
