@@ -2,8 +2,73 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
-// Typography
 
+.banner-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.full-width-banner {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 内容图片样式 */
+.content-image {
+  margin-bottom: 20px;
+}
+.content-image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* 按钮组样式 */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+.btn-github { background-color: #24292e; }
+.btn-codalab { background-color: #0076b5; }
+.btn-ntire { background-color: #ff5722; }
+
+/* 表格样式 */
+.content-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+.content-table th, .content-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.content-table th {
+  background-color: #f2f2f2;
+}
+
+// Typography
+//
 p,
 h1,
 h2,
