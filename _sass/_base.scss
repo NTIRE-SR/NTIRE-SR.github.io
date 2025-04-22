@@ -1481,28 +1481,5 @@ figure.cover {
   .btn-ntire { background-color: #ff5722; }
   .btn-arxiv { background-color: #b31b1b; }
   .btn-supp { background-color: #3FB950; }
-  
-  .citation {
-    margin: 2rem 0;
-    padding: 1rem;
-    background-color: var(--global-bg-color);
-    border-radius: 5px;
-  
-    h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--global-theme-color);
-    }
-  
-    pre {
-      background-color: var(--global-code-bg-color);
-      padding: 1rem;
-      border-radius: 5px;
-      overflow-x: auto;
-      font-family: monospace;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-  }
-  
+
 }
