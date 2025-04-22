@@ -1441,12 +1441,13 @@ figure.cover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8vw; /* 根据视口宽度调整字体大小 */
+    font-size: 2rem; /* 根据视口宽度调整字体大小 */
     color: white;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
     white-space: nowrap;
+    font-weight: bold; /* 设置文字加粗 */
   }
   
   
