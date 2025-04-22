@@ -7,7 +7,7 @@ layout: default
   <div class="banner-container">
     <img src="/assets/img/cvpr2025_nashville_tn.jpg" alt="NTIRE Banner" class="full-width-banner">
     <div class="banner-title">
-      <h1>NTIRE 2025 Image Super-Resolution (x4)</h1> 
+      <h1>NTIRE 2025 Image Super-Resolution (x4)</h1>
     </div>
   </div>
 
@@ -25,6 +25,9 @@ layout: default
         <a href="https://github.com/zhengchen1999/NTIRE2025_ImageSR_x4" class="btn btn-github">GitHub</a>
         <a href="https://codalab.lisn.upsaclay.fr/competitions/21451" class="btn btn-codalab">CodaLab</a>
         <a href="https://cvlai.net/ntire/2025/" class="btn btn-ntire">NTIRE</a>
+        <a href="https://arxiv.org/abs/2504.14582" class="btn btn-arxiv">arXiv</a>
+        <a href="https://github.com/zhengchen1999/NTIRE2025_ImageSR_x4/releases/download/Supp/NTIRE.2025.Image.Super.Resolution.x4.Supplementary.pdf"
+          class="btn btn-supp">Supplementary</a>
       </div>
 
       {{ content }}
@@ -36,9 +39,22 @@ layout: default
         </a>
       </div>
 
+      <!-- 添加BibTeX引用 -->
+      <div class="citation">
+        <h3>参考文献</h3>
+        <pre>
+@inproceedings{ntire2025srx4,
+title={{NTIRE} 2025 Challenge on Image Super-Resolution (x4): Methods and Results},
+author={Zheng Chen and Kai Liu and Jue Gong and Jingkai Wang and Lei Sun and Zongwei Wu and
+Radu Timofte and Yulun Zhang and others},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+year={2025}
+}
+        </pre>
+      </div>
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
-    {% endif %}
+      {% endif %}
   </article>
 </div>
