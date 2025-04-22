@@ -33,11 +33,6 @@ The NTIRE 2025 Image Super-Resolution (×4) Challenge Organizers
 
 April 20, 2025
 
-<div class="content-image">
-  <a>
-    <img src="/assets/img/sr-table.png" alt="Content Image">
-  </a>
-</div>
 
 ```markdown
 @inproceedings{ntire2025srx4,
