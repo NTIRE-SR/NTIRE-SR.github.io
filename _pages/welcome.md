@@ -36,7 +36,7 @@ April 20, 2025
 
 ```markdown
 @inproceedings{ntire2025srx4,
-  title={{NTIRE} 2025 Challenge on Image Super-Resolution (×4): Methods and Results},
+  title={NTIRE 2025 Challenge on Image Super-Resolution (×4): Methods and Results},
   author={Zheng Chen and Kai Liu and Jue Gong and Jingkai Wang and Lei Sun and Zongwei Wu and
 	Radu Timofte and Yulun Zhang and others},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
