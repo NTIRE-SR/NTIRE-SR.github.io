@@ -1428,13 +1428,6 @@ figure.cover {
     width: 100%;
     margin-bottom: 2rem;
   }
-  
-  h1 {
-    color: #FFFFFF;
-    font-size: 3rem;
-    white-space: nowrap; /* 防止文字换行 */
-    font-weight: bold; /* 设置文字加粗 */
-  }
 
   .full-width-banner {
     width: 100%;
@@ -1443,16 +1436,17 @@ figure.cover {
     object-fit: cover;
   }
   
-  .banner-title {
+  .banner-title h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
+    font-size: 8vw; /* 根据视口宽度调整字体大小 */
+    color: white;
     text-align: center;
-    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; /* 防止文字换行 */
-    font-weight: bold; /* 设置文字加粗 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    white-space: nowrap;
   }
   
   
