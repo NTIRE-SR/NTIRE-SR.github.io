@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NTIRE 2026 — Single-Image Super-Resolution (×4) Challenge</title>
-  <meta name="description" content="NTIRE 2026 Workshop & Challenges @ CVPR 2026: Single-Image Super-Resolution (×4) Challenge." />
-  <meta property="og:title" content="NTIRE 2026 — Single-Image Super-Resolution (×4) Challenge" />
-  <meta property="og:description" content="A challenge track at NTIRE 2026 (CVPR 2026, Denver) for single-image super-resolution (×4)." />
+  <title>NTIRE 2026 Challenge on Single-Image Super-Resolution (×4 Magnification)</title>
+  <meta name="description" content="Official NTIRE 2026 challenge track on four-times single-image super-resolution at the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026: independent restoration and perceptual evaluation, standardized data, and published rankings." />
+  <meta property="og:title" content="NTIRE 2026 Challenge on Single-Image Super-Resolution (×4 Magnification)" />
+  <meta property="og:description" content="New Trends in Image Restoration and Enhancement (NTIRE) 2026 at CVPR 2026 (Denver): dual-track super-resolution evaluation (peak signal-to-noise ratio and a fixed perceptual composite score), with data and submission via CodaBench." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/cover.jpg" />
   <meta name="theme-color" content="#ffffff" />
@@ -19,14 +19,16 @@
     <a class="brand" href="#top" aria-label="Home">
       <span class="brand__mark">NTIRE 2026</span>
       <span class="brand__sep">•</span>
-      <span class="brand__sub">×4 Super-Resolution Challenge</span>
+      <span class="brand__sub">Single-Image SR (×4) Challenge Track</span>
     </a>
 
     <nav class="nav">
       <a href="#overview">Overview</a>
+      <a href="#timeline">Timeline</a>
       <a href="#dataset">Data & Phases</a>
       <a href="#evaluation">Evaluation</a>
-      <a href="#timeline">Timeline</a>
+      <a href="#results">Challenge Results</a>
+      <a href="#awards">Awards</a>
       <a href="#organizers">Organizers</a>
       <a class="nav__cta" href="#join">Join</a>
     </nav>
@@ -41,7 +43,7 @@
         <p class="badge">NTIRE Workshop & Challenges @ CVPR 2026 • Denver, Colorado</p>
         <h1>Single-Image Super-Resolution (×4) Challenge</h1>
         <p class="lead">
-          In application scenarios such as mobile imaging, medical imaging, and satellite remote sensing, low-resolution images often lose details due to hardware limitations and imaging conditions, affecting subsequent analysis and practical use. This track focuses on 4× super-resolution reconstruction (×4 SR), encouraging participants to restore rich texture and structural information of high-resolution images from low-resolution inputs.
+          Official <strong>New Trends in Image Restoration and Enhancement (NTIRE) 2026</strong> track, co-located with <strong>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</strong>: <strong>single-image super-resolution</strong> at <strong>×4</strong>. 
         </p>
 
         <div class="hero__actions">
@@ -53,15 +55,15 @@
         <div class="hero__stats" role="list" aria-label="Quick facts">
           <div class="stat" role="listitem">
             <div class="stat__k">Task</div>
-            <div class="stat__v">Single-Image SR (×4)</div>
+            <div class="stat__v">Single-image SR, ×4</div>
           </div>
           <div class="stat" role="listitem">
             <div class="stat__k">Scale</div>
             <div class="stat__v">×4</div>
           </div>
           <div class="stat" role="listitem">
-            <div class="stat__k">Evaluation</div>
-            <div class="stat__v">Dual-Track Assessment</div>
+            <div class="stat__k">Tracks</div>
+            <div class="stat__v">Restoration + Perceptual</div>
           </div>
         </div>
       </div>
@@ -72,79 +74,21 @@
         <h2>Challenge Overview</h2>
 
         <p>
-          This challenge is part of the <strong>NTIRE Workshop & Challenges</strong> co-located with
-          <strong>CVPR 2026</strong>. NTIRE (New Trends in Image Restoration and Enhancement) is one of the most influential international competitions and workshops in the field of image restoration and enhancement, continuously promoting fair comparison and continuous progress of image restoration algorithms under unified data and evaluation protocols.
+          This challenge constitutes an official competition track of the <strong>New Trends in Image Restoration and Enhancement (NTIRE) 2026 Workshop &amp; Challenges</strong>, co-located with the <strong>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</strong> in Denver, Colorado, USA. NTIRE provides a standardized benchmark for image restoration and enhancement research with publicly defined data splits, evaluation protocols, and reporting procedures to support fair comparison and reproducibility.
         </p>
 
         <div class="grid2">
           <div class="card">
-            <h3>Why super-resolution is needed</h3>
+            <h3>Task formulation</h3>
             <p>
-              With the continuous development of computer vision, single-image super-resolution (Single-Image Super-Resolution, ×4) has become one of the key directions in the field of image restoration. In application scenarios such as mobile imaging, medical imaging, and satellite remote sensing, low-resolution images often lose details due to hardware limitations and imaging conditions, affecting subsequent analysis and practical use.
+              Participants address <strong>single-image super-resolution with four-fold upsampling</strong>: given one low-resolution RGB input, produce one high-resolution RGB output. The problem is ill-posed; methods are expected to recover plausible high-frequency structure and texture while limiting artifacts. The challenge evaluates algorithms under a fixed training, validation, and testing protocol released by the organizers.
             </p>
           </div>
           <div class="card">
-            <h3>Challenge goal</h3>
+            <h3>Evaluation protocol</h3>
             <p>
-              This track focuses on 4× super-resolution reconstruction (×4 SR), encouraging participants to restore rich texture and structural information of high-resolution images from low-resolution inputs, promoting the usability and innovation of algorithms in real-world scenarios.
+              Performance is <strong>not</strong> summarized by a single scalar. <strong>Restoration</strong> and <strong>perceptual</strong> quality are assessed on separate leaderboards (see <a href="#evaluation">Evaluation</a> and <a href="#results">Challenge Results</a>). The overall ordering policy combines the two track rankings according to the rule stated in the results section, so that high-fidelity and perceptually strong solutions are both reflected in the final standings.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="dataset" class="section section--alt">
-      <div class="container">
-        <h2>Data & Competition Phases</h2>
-
-        <div class="card">
-          <h3>Where to get the data</h3>
-          <p>
-            All datasets are hosted on the competition platform under the <em>Files</em> section.
-          </p>
-        </div>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Development Phase</h3>
-            <p>
-              Training set (with input-output pairs) and validation set (input only) are released. Participants can train models based on the training set and debug and iteratively optimize through the validation set.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Test Phase</h3>
-            <p>
-              After the final test set (input only) is released, participants submit super-resolution results from model outputs, which are uniformly evaluated by the organizing committee to give final rankings.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="evaluation" class="section">
-      <div class="container">
-        <h2>Evaluation</h2>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Dual-track evaluation</h3>
-            <p>
-              The goal of this challenge is to develop advanced single-image super-resolution algorithms that reconstruct high-quality high-resolution images from low-resolution inputs based on example data, restoring rich details and texture information as much as possible. The competition is divided into dual-track evaluation:
-            </p>
-            <ul class="nice" style="margin-top: 10px;">
-              <li><strong>Restoration Quality:</strong> Using PSNR as the core metric to measure pixel-level restoration accuracy.</li>
-              <li><strong>Perception Quality:</strong> Using Perception Score as the core metric, which is obtained by weighting 6 perceptual metrics (LPIPS, DISTS, NIQE, ManIQA, MUSIQ, CLIP-IQA) to evaluate the visual realism and perceptual quality of results.</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Submission requirements</h3>
-            <ul class="nice">
-              <li>Submit super-resolution results for the test set by the result deadline.</li>
-              <li>Submit a Fact Sheet and reproducible code/executable by the code deadline.</li>
-              <li>Top-ranked teams will be invited to present at the NTIRE workshop.</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -182,38 +126,14 @@
             </div>
             <div class="trow">
               <div class="tdate">2026-06</div>
-              <div class="titem">NTIRE Workshop & Challenges & Awards (CVPR 2026, Denver, CO)</div>
+              <div class="titem">New Trends in Image Restoration and Enhancement (NTIRE) 2026 Workshop &amp; Challenges and awards ceremony (IEEE/CVF CVPR 2026, Denver, CO, USA)</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="awards" class="section">
-      <div class="container">
-        <h2>Awards & Opportunities</h2>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Awards</h3>
-            <p>
-              Top-ranked teams will be invited to publish up to 8-page papers at the NTIRE Workshop, included in the CVPR 2025 Workshop proceedings.
-            </p>
-            <p style="margin-top: 10px;">
-              Dual-track independent awards: Restoration Quality and Perception Quality tracks each set up awards, with the top three teams receiving challenge certificates.
-            </p>
-          </div>
-          <div class="card">
-            <h3>Other opportunities</h3>
-            <p>
-              Details about sponsor rewards and travel grants will be updated on the NTIRE website.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="join" class="section section--alt">
+    <section id="join" class="section">
       <div class="container">
         <h2>Join the Challenge</h2>
 
@@ -229,19 +149,125 @@
           </div>
 
           <div class="card">
-            <h3>NTIRE 2026</h3>
+            <h3>New Trends in Image Restoration and Enhancement (NTIRE) 2026</h3>
             <p>
-              Learn more about the NTIRE 2026 workshop and other challenges on the official NTIRE website.
+              The central portal lists the full <strong>NTIRE 2026 Workshop &amp; Challenges</strong> program and companion tracks.
             </p>
             <a class="button" href="https://cvlai.net/ntire/2026/" target="_blank" rel="noreferrer">
-              Open NTIRE 2026
+              NTIRE 2026 website
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="organizers" class="section">
+    <section id="dataset" class="section section--alt">
+      <div class="container">
+        <h2>Data & Competition Phases</h2>
+
+        <p class="muted" style="margin-bottom: 12px;">
+          All released corpora are distributed through the CodaBench competition interface under the <em>Files</em> tab.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Development phase</h3>
+            <p>
+              <strong>Training data</strong> consist of registered low-resolution and high-resolution image pairs for supervised model development. The <strong>validation</strong> release provides low-resolution inputs only and is intended for diagnostics, ablation studies, and model selection; <strong>validation data must not be used for training or parameter updates</strong> in violation of the challenge rules.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Testing phase and ranking</h3>
+            <p>
+              The <strong>test</strong> release contains low-resolution inputs only. Participants submit super-resolution outputs by the prescribed deadline; the organizing committee computes official metrics. A completed <strong>Fact Sheet</strong> together with <strong>reproducible source code</strong> or a <strong>runnable executable</strong> is required by the separate code submission deadline for verification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evaluation" class="section">
+      <div class="container">
+        <h2>Evaluation</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Independent evaluation tracks</h3>
+            <ul class="nice">
+              <li><strong>Track 1 — Restoration quality:</strong> ranking by <strong>peak signal-to-noise ratio (PSNR)</strong> computed under the official test procedure (luminance <strong>Y</strong> channel; <strong>4-pixel boundary shave</strong> where specified in the protocol).</li>
+              <li><strong>Track 2 — Perceptual quality:</strong> ranking by a fixed <strong>composite score</strong> combining <strong>LPIPS</strong>, <strong>DISTS</strong>, <strong>NIQE</strong>, <strong>MUSIQ</strong>, <strong>ManIQA</strong>, and <strong>CLIPIQA</strong>, as specified for this track. The closed-form expression and leaderboard appear under <a href="#results">Challenge Results</a>.</li>
+            </ul>
+            <p class="muted" style="margin-top: 10px; margin-bottom: 0;">
+              <strong>Overall ordering</strong> on the published table is determined from the two track rankings according to the policy stated in <a href="#results">Challenge Results</a> (considering both the best single-track rank and the mean rank across tracks).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Required submissions</h3>
+            <ul class="nice">
+              <li>Test-set <strong>super-resolution images</strong> in the filename convention and container format specified on CodaBench.</li>
+              <li><strong>Fact Sheet</strong> and <strong>reproducible code</strong> or <strong>executable</strong> by the announced code deadline.</li>
+              <li>Leading teams may be invited to present at the <strong>New Trends in Image Restoration and Enhancement (NTIRE) 2026</strong> workshop session at <strong>CVPR 2026</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section section--alt">
+      <div class="container">
+        <h2>Challenge Results</h2>
+
+        <div class="card">
+          <ul class="nice">
+            <li><strong>31</strong> valid submissions are ranked.</li>
+            <li><strong>Evaluation set:</strong> all metrics are computed on <strong>DIV2K-test</strong> (<strong>100</strong> images).</li>
+            <li><strong>Track 1 — Restoration:</strong> ranked by <strong>peak signal-to-noise ratio (PSNR)</strong> (luminance <strong>Y</strong> channel; <strong>4-pixel shave</strong>).</li>
+            <li>
+              <strong>Track 2 — Perceptual:</strong> ranked by a combined score:
+              <div class="formula" aria-label="Perceptual score formula" style="margin-top: 12px;">
+                <code>Score = (1 − LPIPS) + (1 − DISTS) + CLIPIQA + MANIQA + MUSIQ / 100 + max(0, (10 − NIQE) / 10)</code>
+              </div>
+            </li>
+            <li><strong>Overall order:</strong> ranking mainly depends on the higher ranking among the two tracks and the average value of the rankings in the two tracks.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3>Full ranking table</h3>
+          <figure class="rank-figure">
+            <img src="assets/rank.png" alt="Challenge ranking table: restoration and perceptual tracks and overall order" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <h2>Awards & Opportunities</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Awards</h3>
+            <p>
+              Top-ranked teams may be invited to submit workshop manuscripts (up to eight pages, subject to the call for papers) to the <strong>New Trends in Image Restoration and Enhancement (NTIRE) 2026</strong> workshop at <strong>IEEE/CVF CVPR 2026</strong>, for inclusion in the official <strong>CVPR 2026 Workshops</strong> proceedings, pending peer review and acceptance.
+            </p>
+            <p style="margin-top: 10px;">
+              Prizes and certificates are awarded <strong>independently</strong> on the restoration-quality and perceptual-quality tracks; the top three teams in each track are eligible for challenge certificates, subject to final organizer confirmation.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Additional opportunities</h3>
+            <p>
+              Information regarding sponsor prizes and travel support will be announced on the official <strong>New Trends in Image Restoration and Enhancement (NTIRE)</strong> website as it becomes available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers" class="section section--alt">
       <div class="container">
         <h2>Organizers</h2>
 
@@ -291,7 +317,7 @@
       </div>
     </section>
 
-    <section id="wechat" class="section section--alt">
+    <section id="wechat" class="section">
       <div class="container">
         <h2>WeChat Group</h2>
 
@@ -316,7 +342,7 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__left">
-          <div class="footer__title">NTIRE 2026 — Single-Image Super-Resolution (×4) Challenge</div>
+          <div class="footer__title">NTIRE 2026 Challenge on Image Super-Resolution (×4) @ CVPR 2026</div>
           <div class="footer__meta">
             <span>© <span id="year"></span></span>
             <span class="dot">•</span>
