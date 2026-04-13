@@ -263,6 +263,18 @@ p{margin: 0 0 12px}
 }
 .qr__caption{color: var(--muted); font-size:.92rem}
 
+/* Challenge results ranking table */
+.rank-figure{margin:0}
+.rank-figure img{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  border-radius: 14px;
+  border: 1px solid rgba(15,23,42,.10);
+  background: white;
+}
+
 /* Footer */
 .footer{
   padding: 32px 0;
