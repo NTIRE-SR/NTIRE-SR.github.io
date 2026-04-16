@@ -45,11 +45,12 @@
         <p class="lead">
           Official <strong>New Trends in Image Restoration and Enhancement (NTIRE) 2026</strong> track, co-located with <strong>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2026</strong>: <strong>single-image super-resolution</strong> at <strong>×4</strong>. 
         </p>
-
-        <div class="hero__actions">
-          <a class="button primary" href="#join">Join the Challenge</a>
-          <a class="button" href="#timeline">Key Dates</a>
-          <a class="button ghost" href="#wechat">WeChat Group</a>
+        <div class="hero__links" aria-label="Quick links">
+          <a class="quick-link quick-link--github" href="https://github.com/zhengchen1999/NTIRE2026_ImageSR_x4" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="quick-link quick-link--codalab" href="https://www.codabench.org/competitions/13516/" target="_blank" rel="noreferrer">CodaBench</a>
+          <a class="quick-link quick-link--ntire" href="https://www.cvlai.net/ntire/2026/" target="_blank" rel="noreferrer">NTIRE</a>
+          <a class="quick-link quick-link--arxiv" href="https://arxiv.org/abs/2504.xxxxx" target="_blank" rel="noreferrer">arXiv</a>
+          <a class="quick-link quick-link--supp" href="https://github.com/zhengchen1999/NTIRE2026_ImageSR_x4/releases/download/v1/NTIRE2026_ImageSR_x4_Supplementary_Material.pdf" target="_blank" rel="noreferrer">Supplementary</a>
         </div>
 
         <div class="hero__stats" role="list" aria-label="Quick facts">
@@ -65,6 +66,12 @@
             <div class="stat__k">Tracks</div>
             <div class="stat__v">Restoration + Perceptual</div>
           </div>
+        </div>
+
+        <div class="hero__actions">
+          <a class="button primary" href="#join">Join the Challenge</a>
+          <a class="button" href="#timeline">Key Dates</a>
+          <a class="button ghost" href="#wechat">WeChat Group</a>
         </div>
       </div>
     </section>
@@ -264,6 +271,35 @@
             </p>
           </div>
         </div>
+
+        <div class="card" style="margin-top: 14px;">
+          <h3>Certificates</h3>
+
+          <div class="grid2" style="margin-top: 12px;">
+            <div>
+              <p style="margin-bottom: 8px;"><strong>Track 1 — Restoration</strong></p>
+              <p>
+                The top three teams by <strong>PSNR</strong> have received <strong>NTIRE 2026 Image SR (×4) Restoration-Track</strong> certificates:
+              </p>
+              <ol class="nice">
+                <li><strong>SamsungAICamera</strong></li>
+                <li><strong>I2WM&amp;JNU</strong></li>
+                <li><strong>SR-Strugglers</strong></li>
+              </ol>
+            </div>
+            <div>
+              <p style="margin-bottom: 8px;"><strong>Track 2 — Perceptual</strong></p>
+              <p>
+                The top three teams by <strong>Perceptual Score</strong> have received <strong>NTIRE 2026 Image SR (×4) Perceptual-Track</strong> certificates:
+              </p>
+              <ol class="nice">
+                <li><strong>SamsungAICamera</strong></li>
+                <li><strong>VEPG</strong></li>
+                <li><strong>HONORAICamera</strong></li>
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -297,6 +333,26 @@
               <div class="org__name">Jiatong Li</div>
               <div class="org__affil">Shanghai Jiao Tong University</div>
               <a class="org__email" href="mailto:jiatong.li2024@gmail.com">jiatong.li2024@gmail.com</a>
+            </div>
+            <div class="org" role="listitem">
+              <div class="org__name">Xianglong Yan</div>
+              <div class="org__affil">Shanghai Jiao Tong University</div>
+              <a class="org__email" href="mailto:yanxianglong@sjtu.edu.cn">yanxianglong@sjtu.edu.cn</a>
+            </div>
+            <div class="org" role="listitem">
+              <div class="org__name">Jianze Li</div>
+              <div class="org__affil">Shanghai Jiao Tong University</div>
+              <a class="org__email" href="mailto:mon3tr@sjtu.edu.cn">mon3tr@sjtu.edu.cn</a>
+            </div>
+            <div class="org" role="listitem">
+              <div class="org__name">Ziqing Zhang</div>
+              <div class="org__affil">Shanghai Jiao Tong University</div>
+              <a class="org__email" href="mailto:zhangziqing@sjtu.edu.cn">zhangziqing@sjtu.edu.cn</a>
+            </div>
+            <div class="org" role="listitem">
+              <div class="org__name">Xiaoyang Liu</div>
+              <div class="org__affil">Shanghai Jiao Tong University</div>
+              <a class="org__email" href="mailto:liuxiaoyang0309@sjtu.edu.cn">liuxiaoyang0309@sjtu.edu.cn</a>
             </div>
             <div class="org" role="listitem">
               <div class="org__name">Radu Timofte</div>
@@ -334,6 +390,23 @@
           <div class="card qr">
             <img src="assets/wechat-qr.jpg" alt="WeChat group QR code" loading="lazy" />
             <div class="qr__caption">WeChat Group QR</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="citation" class="section section--alt">
+      <div class="container">
+        <h2>Citation</h2>
+        <div class="card">
+          <p class="muted">If you find this challenge helpful in your research or work, please cite:</p>
+          <div class="formula" aria-label="Citation BibTeX">
+            <pre style="margin:0; white-space:pre-wrap;"><code>@inproceedings{ntire2026srx4,
+  title={The Fourth Challenge on Image Super-Resolution (×4) at NTIRE 2026: Benchmark Results and Method Overview},
+  author={Chen, Zheng and Liu, Kai and Wang, Jingkai and Yan, Xianglong and Li, Jianze and Zhang, Ziqing and Gong, Jue and Li, Jiatong and Sun, Lei and Liu, Xiaoyang and Timofte, Radu and Zhang, Yulun and others},
+  booktitle={CVPRW},
+  year={2026}
+}</code></pre>
           </div>
         </div>
       </div>
