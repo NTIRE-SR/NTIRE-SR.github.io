@@ -232,6 +232,14 @@ p{margin: 0 0 12px}
   font-size: 1rem;
   color: var(--text);
 }
+.cert-download{
+  margin: 16px 0 0;
+}
+.cert-download a{
+  color: #0284c7;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* Timeline */
 .timeline{display:flex; flex-direction:column; gap: 10px}
